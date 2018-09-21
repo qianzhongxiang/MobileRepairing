@@ -1,0 +1,8 @@
+<ng-container *ngIf="Login">
+  <app-login></app-login>
+  <button type="button" class="btn btn-link" (click)="Login=!Login">注 册</button>
+</ng-container>
+<ng-container *ngIf="!Login">
+  <app-logup></app-logup>
+  <button type="button" class="btn btn-link" (click)="Login=!Login">已有账户</button>
+</ng-container>

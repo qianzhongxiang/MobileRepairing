@@ -1,0 +1,34 @@
+{
+    "Brands": [
+        {
+            "name": "IPhone",
+            "value": "iphone"
+        },
+        {
+            "name": "XiaoMi",
+            "value": "xiaomi"
+        }
+    ],
+    "Models": {
+        "iphone": [
+            {
+                "name": "6",
+                "value": "6"
+            },
+            {
+                "name": "6s",
+                "value": "6s"
+            }
+        ],
+        "xiaomi": [
+            {
+                "name": "4",
+                "value": "4"
+            },
+            {
+                "name": "5",
+                "value": "5"
+            }
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+:host{
+    display: block;
+    height: 260px;
+}
+ngb-carousel,img{
+    height: 260px;
+}

@@ -1,0 +1,17 @@
+<div class="container cards border m-1">
+  <div class="row">
+    <div class="col font-weight-bold">{{SourceData.Detials.Brand}} {{SourceData.Detials.model}}</div>
+    <div class="col">{{DateContert(SourceData.CreatedTime)}}</div>
+  </div>
+  <div class="row">
+    <div class="col">损坏部件：{{SourceData.Detials.BrokenPart}}</div>
+    <div class="col font-weight-bold">订单状态：{{StateContert(SourceData.OrderState)}}</div>
+  </div>
+  <div class="row">
+    <div class="col">{{SourceData.PhoneNumber}}</div>
+    <div class="col">地址：{{SourceData.Address}}</div>
+  </div>
+  <div class="row">
+    <div class="col">维修工程师：{{SourceData.Engineers.join(";")}}</div>
+  </div>
+</div>

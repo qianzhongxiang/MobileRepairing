@@ -1,0 +1,20 @@
+<form>
+  <div class="form-group">
+    <label for="uName">用户名</label>
+    <input name="uName" type="text" class="form-control" id="uName" [(ngModel)]="Data.UserName" aria-describedby="emailHelp"
+      placeholder="用户名">
+  </div>
+  <div class="form-group">
+    <label for="pwd">密码</label>
+    <input name="pwd" type="password" class="form-control" id="pwd" [(ngModel)]="Data.Password" placeholder="密码">
+  </div>
+  <div class="form-group">
+    <label for="ConfirmPassword">密码确认</label>
+    <input name="ConfirmPassword" type="password" class="form-control" id="ConfirmPassword" [(ngModel)]="Data.ConfirmPassword"
+      placeholder="再次确认密码">
+  </div>
+  <div class="form-group" *ngIf="Msg">
+    <label style="color:red;">{{Msg}}</label>
+  </div>
+  <button type="button" class="btn btn-primary" (click)="Logup();">注 册</button>
+</form>
