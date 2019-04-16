@@ -10,12 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FootMenuBarComponent implements OnInit {
 
-  constructor(private NetService: NetService, private MatDialog: MatDialog) { }
+  constructor(private netService: NetService, private matDialog: MatDialog) { }
 
   ngOnInit() {
   }
   public Book() {
-    this.MatDialog.open(OrderFormComponent, { width: "95%" })
+    this.matDialog.open(OrderFormComponent, { width: '95%' });
   }
 
   public BookSuccessful() {

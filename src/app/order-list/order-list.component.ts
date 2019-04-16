@@ -11,11 +11,12 @@ import { OrderFormCheckComponent } from '../order-form-check/order-form-check.co
 })
 export class OrderListComponent implements OnInit, AfterViewInit {
   public Day: string = new Date().toLocaleString();
+  public State = 0;
   ngAfterViewInit(): void {
-    this.OrderListService.Refresh({ date: new Date() });
+    this.orderListService.Refresh({ date: new Date() });
   }
 
-  constructor(public OrderListService: OrderListService, public MatDialog: MatDialog) {
+  constructor(public orderListService: OrderListService, public matDialog: MatDialog) {
 
   }
 
@@ -24,9 +25,15 @@ export class OrderListComponent implements OnInit, AfterViewInit {
   }
 
   public OrderClick(order: Order) {
-    let ref = this.MatDialog.open(OrderFormCheckComponent, { data: order, width: "95%" });
+    const ref = this.matDialog.open(OrderFormCheckComponent, { data: order, width: '95%' });
     ref.afterClosed().subscribe(() => {
-      this.OrderListService.Refresh({ date: new Date() });
-    })
+      this.orderListService.Refresh({ date: new Date() });
+    });
+  }
+
+  public Changed(state?: number) {
+    if (state) {
+      this.State = state;
+    }
   }
 }

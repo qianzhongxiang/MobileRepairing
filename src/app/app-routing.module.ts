@@ -8,11 +8,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { IntroducingComponent } from './inctoducing/introducing.component';
 import { NgbModule, NgbCarouselModule, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { SetCareerComponent } from './set-career/set-career.component';
+import { BookRepairingComponent } from './book-repairing/book-repairing.component';
+import { OrderFormComponent } from './order-form/order-form.component';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
-  { path: '', redirectTo: "introducing", pathMatch: "full" },
+  { path: '', redirectTo: 'introducing', pathMatch: 'full' },
   { path: 'introducing', component: IntroducingComponent },
   { path: 'orders', component: OrderListComponent },
+  // { path: 'book', component: BookRepairingComponent },
   { path: 'manageuser', component: ManageUserComponent },
   { path: 'setcareer', component: SetCareerComponent }
 ];
@@ -24,6 +28,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     NgbModule,
     NgbCarouselModule,
+    FormsModule
   ],
   exports: [
     RouterModule
@@ -31,8 +36,10 @@ const routes: Routes = [
   declarations: [IntroducingComponent,
     OrderListComponent,
     OrderItemComponent,
-    ImageCarouselComponent,
+    OrderFormComponent,
+    ImageCarouselComponent
   ],
-  providers: [NgbCarouselConfig]
+  providers: [NgbCarouselConfig],
+  entryComponents: []
 })
 export class AppRoutingModule { }

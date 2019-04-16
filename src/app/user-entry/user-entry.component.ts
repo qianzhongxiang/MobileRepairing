@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-entry.component.css']
 })
 export class UserEntryComponent implements OnInit {
-  public Login: boolean = true
+  public Login = true;
   constructor(public dialogRef: MatDialogRef<UserEntryComponent>) { }
 
   ngOnInit() {

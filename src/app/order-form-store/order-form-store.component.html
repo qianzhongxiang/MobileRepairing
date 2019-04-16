@@ -1,16 +1,18 @@
 <form>
   <div class="form-group">
     <label for="brand">品牌</label>
-    <select #selectedbrand name="brand" class="form-control" id="brand" [(ngModel)]="Data.Detials.Brand">
+    <input name="brand" class="form-control" id="brand" [(ngModel)]="Data.Detials.Brand">
+    <!-- <select #selectedbrand name="brand" class="form-control" id="brand" [(ngModel)]="Data.Detials.Brand">
       <option *ngFor="let brand of orderListService.Brands" value="{{brand.value}}">{{brand.name}}</option>
-    </select>
+    </select> -->
   </div>
   <div class="form-group">
     <label for="model">型号</label>
-    <select name="model" class="form-control" id="model" [(ngModel)]="Data.Detials.model">
+    <input name="model" class="form-control" id="model" [(ngModel)]="Data.Detials.model">
+    <!-- <select name="model" class="form-control" id="model" [(ngModel)]="Data.Detials.model">
       <option *ngFor="let model of orderListService.Models[Data.Detials.Brand]" value="{{model.value}}">{{model.name}}
       </option>
-    </select>
+    </select> -->
   </div>
   <div class="form-group">
     <label for="details">维修内容</label>
@@ -21,10 +23,6 @@
     <label for="phoneNumber">手机号</label>
     <input name="phoneNumber" type="number" class="form-control" id="phoneNumber" placeholder="手机号码"
       [(ngModel)]="Data.PhoneNumber">
-  </div>
-  <div class="form-group">
-    <label for="address">地址</label>
-    <textarea name="address" class="form-control" placeholder="家庭住址" id="address" [(ngModel)]="Data.Address"></textarea>
   </div>
   <div class="form-group">
     <button type="button" class="btn btn-block btn-large btn-primary" (click)="Submit();">提 交</button>

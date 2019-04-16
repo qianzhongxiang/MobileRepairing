@@ -9,10 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./set-career.component.css']
 })
 export class SetCareerComponent implements OnInit {
-  public Careers = Career
-  public keys: string[]
-  public Data: { UserName?: string, Career?: number } = {}
-  constructor(private NetService: NetService, private ConfigService: ConfigService) {
+  public Careers = Career;
+  public keys: string[];
+  public Data: { UserName?: string, Career?: number } = {};
+  constructor(private netService: NetService, private configService: ConfigService) {
     this.keys = Object.keys(Career).filter((s: string) => !isNaN(s as any));
   }
 
@@ -20,8 +20,8 @@ export class SetCareerComponent implements OnInit {
   }
 
   public UpdateCareer() {
-    this.NetService.PostAsync(this.ConfigService.Data.Urls.UpdateCareer, this.Data, () => {
-      this.NetService.ShowInfo("修改成功")
-    })
+    this.netService.PostAsync(this.configService.Data.Urls.UpdateCareer, this.Data, () => {
+      this.netService.ShowInfo('修改成功');
+    });
   }
 }

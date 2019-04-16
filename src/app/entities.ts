@@ -4,16 +4,16 @@ export enum Career {
     Manager
 }
 export interface User {
-    Id?: string
-    UserName?: string
-    Password?: string
-    Career?: Career
+    Id?: string;
+    UserName?: string;
+    Password?: string;
+    Career?: Career;
 }
 export interface OrderDetails {
-    Id?: string
-    Brand?: string
-    model?: string
-    BrokenPart?: string
+    Id?: string;
+    Brand?: string;
+    model?: string;
+    BrokenPart?: string;
 }
 export enum OrderStates {
     Pending,
@@ -22,14 +22,19 @@ export enum OrderStates {
     Canceled,
     CanceledApplying
 }
+export enum OrderType {
+    OnStore,
+    Home
+}
 export interface Order {
-    Id?: string
-    Address?: string
-    PhoneNumber?: string
-    Comment?: string
-    OrderState?: OrderStates
-    Price?: string
-    Engineers?: User[]
-    Detials?: OrderDetails
-    CreatedTime?: string
+    Id?: string;
+    Address?: string;
+    PhoneNumber?: string;
+    Comment?: string;
+    OrderState?: OrderStates;
+    Price?: string;
+    Engineers?: User[];
+    Detials?: OrderDetails;
+    CreatedTime?: string;
+    Type?: OrderType;
 }

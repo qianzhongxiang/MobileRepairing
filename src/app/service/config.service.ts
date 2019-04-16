@@ -7,8 +7,8 @@ import { AppConfig } from '../app-config';
   providedIn: 'root'
 })
 export class ConfigService {
-  public Data: AppConfig
-  private default: AppConfig
+  public Data: AppConfig;
+  private default: AppConfig;
   constructor(private http: HttpClient) { }
 
   public Load(): Promise<AppConfig> {
@@ -19,7 +19,7 @@ export class ConfigService {
       }, error => {
         this.Data = Object.assign({}, this.default || {}) as any;
         resolve(this.Data);
-      })
-    })
+      });
+    });
   }
 }
