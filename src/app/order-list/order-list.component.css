@@ -1,5 +1,22 @@
+:host{
+    display:block;
+}
+.mat-elevation-z8{
+    height: 100%;
+}
 .selected{
     color: red;
     font: bolder 微软雅黑 1.2rem；
 }
 
+table{
+    width: 100%;
+    min-height: calc(100vh - 110px) !important;
+}
+tr{
+    max-height: 50px;
+}
+td,th{
+    min-width: 120px;
+    max-width: 400px;
+}

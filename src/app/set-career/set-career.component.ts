@@ -20,7 +20,7 @@ export class SetCareerComponent implements OnInit {
   }
 
   public UpdateCareer() {
-    this.netService.PostAsync(this.configService.Data.Urls.UpdateCareer, this.Data, () => {
+    this.netService.PostAsync(this.configService.Data.Urls.UpdateCareer, this.Data).subscribe(() => {
       this.netService.ShowInfo('修改成功');
     });
   }

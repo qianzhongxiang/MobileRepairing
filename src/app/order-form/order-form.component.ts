@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order-form.component.css']
 })
 export class OrderFormComponent implements OnInit {
-  public Data: Order = { Detials: {} };
+  public Data: Order = { detials: {} };
   constructor(private netService: NetService, private configService: ConfigService
     , public orderListService: OrderListService, private router: Router) {
   }
@@ -20,10 +20,10 @@ export class OrderFormComponent implements OnInit {
   }
 
   public Submit() {
-    this.Data.Type = OrderType.Home;
-    this.netService.PostAsync(this.configService.Data.Urls.OrderPost, this.Data, this.SubmitSuccessful.bind(this));
+    this.Data.type = OrderType.Home;
+    this.netService.PostAsync(this.configService.Data.Urls.OrderPost, this.Data).subscribe(this.SubmitSuccessful.bind(this));
   }
   public SubmitSuccessful() {
-    this.router.navigateByUrl('orders');
+    this.router.navigateByUrl('introducing');
   }
 }

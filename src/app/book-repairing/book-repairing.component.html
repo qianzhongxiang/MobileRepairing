@@ -2,27 +2,31 @@
   <form>
     <div class="form-group">
       <label for="brand">品牌</label>
-      <select #selectedbrand name="brand" class="form-control" id="brand" [(ngModel)]="Data.Detials.Brand">
-        <option *ngFor="let brand of OrderListService.Brands" value="{{brand.value}}">{{brand.name}}</option>
+      <select #selectedbrand name="brand" class="form-control" id="brand" [(ngModel)]="Data.detials.brand">
+        <option *ngFor="let brand of orderListService.Brands" value="{{brand.value}}">{{brand.name}}</option>
       </select>
     </div>
     <div class="form-group">
       <label for="model">型号</label>
-      <select name="model" class="form-control" id="model" [(ngModel)]="Data.Detials.model">
-        <option *ngFor="let model of OrderListService.Models[Data.Detials.Brand]" value="{{model.value}}">{{model.name}}</option>
+      <select name="model" class="form-control" id="model" [(ngModel)]="Data.detials.model">
+        <option *ngFor="let model of orderListService.Models[Data.detials.brand]" value="{{model.value}}">{{model.name}}
+        </option>
       </select>
     </div>
     <div class="form-group">
       <label for="boken">损坏的部件</label>
-      <input name="boken" type="input" class="form-control" id="boken" placeholder="摄像头" [(ngModel)]="Data.Detials.BrokenPart">
+      <input name="boken" type="input" class="form-control" id="boken" placeholder="摄像头"
+        [(ngModel)]="Data.detials.brokenPart">
     </div>
     <div class="form-group">
       <label for="phoneNumber">手机号</label>
-      <input name="phoneNumber" type="number" class="form-control" id="phoneNumber" placeholder="手机号码" [(ngModel)]="Data.PhoneNumber">
+      <input name="phoneNumber" type="number" class="form-control" id="phoneNumber" placeholder="手机号码"
+        [(ngModel)]="Data.phoneNumber">
     </div>
     <div class="form-group">
       <label for="address">地址</label>
-      <textarea name="address" class="form-control" placeholder="家庭住址" id="address" [(ngModel)]="Data.Address"></textarea>
+      <textarea name="address" class="form-control" placeholder="家庭住址" id="address"
+        [(ngModel)]="Data.address"></textarea>
     </div>
     <div class="form-group">
       <button type="button" class="btn btn-block btn-large btn-primary" (click)="Submit();">提 交</button>

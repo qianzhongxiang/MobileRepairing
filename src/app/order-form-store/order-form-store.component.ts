@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class OrderFormStoreComponent implements OnInit {
 
-  public Data: Order = { Detials: {} };
+  public Data: Order = { detials: {} };
   constructor(private netService: NetService, private configService: ConfigService
     , public orderListService: OrderListService, private router: Router) {
   }
@@ -21,8 +21,8 @@ export class OrderFormStoreComponent implements OnInit {
   }
 
   public Submit() {
-    this.Data.Type = OrderType.OnStore;
-    this.netService.PostAsync(this.configService.Data.Urls.OrderPost, this.Data, this.SubmitSuccessful.bind(this));
+    this.Data.type = OrderType.OnStore;
+    this.netService.PostAsync(this.configService.Data.Urls.OrderPost, this.Data).subscribe(this.SubmitSuccessful.bind(this));
   }
   public SubmitSuccessful() {
     this.router.navigateByUrl('orders');

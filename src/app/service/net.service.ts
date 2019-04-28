@@ -3,8 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { UserService } from './user.service';
 import { Injectable } from '@angular/core';
 import { Cookie } from 'vincijs';
-import { User } from '../entities';
+import { User, Order } from '../entities';
 import { InfoDialogComponent } from '../info-dialog/info-dialog.component';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -26,7 +27,7 @@ export class NetService {
   public ShowInfo(msg: string) {
     this.matDialog.open(InfoDialogComponent, { data: msg });
   }
-  public PostAsync(url: string, body: any, callback: (data) => void) {
+  public PostAsync(url: string, body: any): Observable<Order[]> {
     // if (!Cookie.Get('user')) {
     //   const ref = this.userService.Login();
     //   ref.afterClosed().subscribe(a => {
@@ -34,13 +35,7 @@ export class NetService {
     //     this.httpClient.post(url, body, { withCredentials: true }).subscribe(callback, this.ShowErr.bind(this));
     //   });
     // } else {
-    this.httpClient.post(url, body, { withCredentials: true }).subscribe(callback, (err) => {
-      if (err.error.ExceptionMessage === 'relogin') {
-        this.userService.Login();
-      } else {
-        this.ShowErr(err);
-      }
-    });
+    return this.httpClient.post(url, body, { withCredentials: true }) as any;
     // }
   }
 }

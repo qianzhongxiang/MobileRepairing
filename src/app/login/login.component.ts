@@ -10,16 +10,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  public Data: User = { UserName: "", Password: "" }
-  constructor(private NetService: NetService, private ConfigService: ConfigService, private UserService: UserService) { }
+  public Data: User = { userName: '', Password: '' };
+  constructor(private netService: NetService, private configService: ConfigService, private userService: UserService) { }
 
   ngOnInit() {
 
   }
   public Login() {
-    this.NetService.UserLogin(this.ConfigService.Data.Urls.UserLogin, this.Data, this.LoginSuccessful.bind(this))
+    this.netService.UserLogin(this.configService.Data.Urls.UserLogin, this.Data, this.LoginSuccessful.bind(this));
   }
   public LoginSuccessful() {
-    this.UserService.CloseLoginDialog();
+    this.userService.CloseLoginDialog();
   }
 }

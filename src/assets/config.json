@@ -1,12 +1,12 @@
 {
     "Urls": {
-        "UserLogin": "http://localhost:59231/api/User/Login",
-        "UserLogup": "http://localhost:59231/api/User/Logup",
-        "UpdateCareer": "http://localhost:59231/api/user/updatecareer",
-        "OrderList": "http://localhost:59231/api/order/getbyday",
-        "Order": "http://localhost:59231/api/order",
-        "OrderPost": "http://localhost:59231/api/order/save",
-        "OrderUpdate": "http://localhost:59231/api/order/update",
+        "UserLogin": "http://localhost:24186/api/User/Login",
+        "UserLogup": "http://localhost:24186/api/User/Logup",
+        "UpdateCareer": "http://localhost:24186/api/user/updatecareer",
+        "OrderList": "http://localhost:24186/api/order/page",
+        "Order": "http://localhost:24186/api/order",
+        "OrderPost": "http://localhost:24186/api/order/save",
+        "OrderUpdate": "http://localhost:24186/api/order/update",
         "Brands": "assets/brands.json"
     }
 }

@@ -25,13 +25,9 @@ export class OrderListService {
     this.LoadBrands();
   }
 
-  public Refresh(data: { userid?: string, date?: Date } = {}) {
-    this.netService.PostAsync(this.configService.Data.Urls.OrderList, data, this.DataSuccessful.bind(this));
+  public Refresh(data: any = {}) {
+    return this.netService.PostAsync(this.configService.Data.Urls.OrderList, data);
   }
-  public DataSuccessful(data: Order[]) {
-    this.Data = data;
-  }
-
   public LoadBrands() {
     this.observable = this.httpClient.get(this.configService.Data.Urls.Brands);
     this.observable.subscribe((data: { Brands: Brand[], Models: { [key: string]: Model[] } }) => {

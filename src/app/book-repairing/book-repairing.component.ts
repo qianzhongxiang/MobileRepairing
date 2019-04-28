@@ -11,16 +11,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./book-repairing.component.css']
 })
 export class BookRepairingComponent implements OnInit {
-  public Data: Order = { Detials: {} }
+  public Data: Order = { detials: {} };
 
-  constructor(private Router: Router, private NetService: NetService, private ConfigService: ConfigService, public OrderListService: OrderListService) { }
+  constructor(private router: Router, private netService: NetService,
+    private configService: ConfigService, public orderListService: OrderListService) { }
 
   ngOnInit() {
   }
   public Submit() {
-    this.NetService.PostAsync(this.ConfigService.Data.Urls.OrderPost, this.Data, this.SubmitSuccessful.bind(this));
+    this.netService.PostAsync(this.configService.Data.Urls.OrderPost, this.Data).subscribe(this.SubmitSuccessful.bind(this));
   }
   public SubmitSuccessful() {
-    this.Router.navigateByUrl("orders")
+    this.router.navigateByUrl('orders');
   }
 }

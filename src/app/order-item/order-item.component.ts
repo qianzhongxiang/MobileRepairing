@@ -7,27 +7,28 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./order-item.component.css']
 })
 export class OrderItemComponent implements OnInit {
-  @Input("sourceData")
-  public SourceData: Order
+  // tslint:disable-next-line:no-input-rename
+  @Input('sourceData')
+  public SourceData: Order;
   constructor() { }
 
   ngOnInit() {
   }
   public DateContert(str: string) {
-    return new Date(str).toLocaleString()
+    return new Date(str).toLocaleString();
   }
   public StateContert(code: number) {
     switch (code) {
       case OrderStates.Canceled:
-        return "已取消";
+        return '已取消';
       case OrderStates.CanceledApplying:
-        return "取消申请中";
+        return '取消申请中';
       case OrderStates.Pending:
-        return "待处理";
+        return '待处理';
       case OrderStates.Processing:
-        return "处理中";
+        return '处理中';
       case OrderStates.Successful:
-        return "已完成";
+        return '已完成';
       default:
         break;
     }

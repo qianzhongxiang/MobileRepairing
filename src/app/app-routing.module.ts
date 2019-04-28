@@ -11,14 +11,19 @@ import { SetCareerComponent } from './set-career/set-career.component';
 import { BookRepairingComponent } from './book-repairing/book-repairing.component';
 import { OrderFormComponent } from './order-form/order-form.component';
 import { FormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { OrderFormCheckComponent } from './order-form-check/order-form-check.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'introducing', pathMatch: 'full' },
+  { path: '', redirectTo: 'orders', pathMatch: 'full' },
   { path: 'introducing', component: IntroducingComponent },
   { path: 'orders', component: OrderListComponent },
   // { path: 'book', component: BookRepairingComponent },
   { path: 'manageuser', component: ManageUserComponent },
-  { path: 'setcareer', component: SetCareerComponent }
+  { path: 'setcareer', component: SetCareerComponent },
+  { path: 'order', component: OrderFormComponent }
 ];
 
 @NgModule({
@@ -28,7 +33,10 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     NgbModule,
     NgbCarouselModule,
-    FormsModule
+    FormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatFormFieldModule
   ],
   exports: [
     RouterModule
@@ -40,6 +48,6 @@ const routes: Routes = [
     ImageCarouselComponent
   ],
   providers: [NgbCarouselConfig],
-  entryComponents: []
+  entryComponents: [OrderFormCheckComponent]
 })
 export class AppRoutingModule { }
