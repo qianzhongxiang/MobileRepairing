@@ -1,12 +1,12 @@
 {
     "Urls": {
-        "UserLogin": "http://47.101.169.234:9180/api/User/Login",
-        "UserLogup": "http://47.101.169.234:9180/api/User/Logup",
-        "UpdateCareer": "http://47.101.169.234:9180/api/user/updatecareer",
-        "OrderList": "http://47.101.169.234:9180/api/order/getbyday",
-        "Order": "http://47.101.169.234:9180/api/order/",
-        "OrderPost": "http://47.101.169.234:9180/api/order/save",
-        "OrderUpdate": "http://47.101.169.234:9180/api/order/update",
+        "UserLogin": "http://bookingSvc.xy-tech.top/api/User/Login",
+        "UserLogup": "http://bookingSvc.xy-tech.top/api/User/Logup",
+        "UpdateCareer": "http://bookingSvc.xy-tech.top/api/user/updatecareer",
+        "OrderList": "http://bookingSvc.xy-tech.top/api/order/page",
+        "Order": "http://bookingSvc.xy-tech.top/api/order/",
+        "OrderPost": "http://bookingSvc.xy-tech.top/api/order/save",
+        "OrderUpdate": "http://bookingSvc.xy-tech.top/api/order/update",
         "Brands": "assets/brands.json"
     }
 }

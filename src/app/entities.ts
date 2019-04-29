@@ -37,4 +37,5 @@ export interface Order {
     detials?: OrderDetails;
     createdTime?: string;
     type?: OrderType;
+    procTime?: string;
 }

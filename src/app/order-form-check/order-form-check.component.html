@@ -18,6 +18,11 @@
       [(ngModel)]="Data.detials.brokenPart">
   </div>
   <div class="form-group">
+    <label for="procTime" *ngIf="!addressShow">到店时间</label>
+    <label for="procTime" *ngIf="addressShow">上门时间</label>
+    <input name="procTime" class="form-control" type="datetime" id="procTime" [(ngModel)]="Data.procTime" />
+  </div>
+  <div class="form-group">
     <label for="phoneNumber">联系方式</label>
     <input name="phoneNumber" type="number" class="form-control" id="phoneNumber" placeholder="手机号码"
       [(ngModel)]="Data.phoneNumber">
@@ -31,6 +36,6 @@
     <button type="button" class="btn btn-primary" (click)="FinishOrder();">完 成</button>
     <!-- 目前可多人受理 -->
     <button type="button" class="btn" (click)="AcceptOrder();">受 理</button>
-    <button type="button" class="btn" (click)="CancelOrderApply();">取消订单</button>
+    <button type="button" class="btn" (click)="CancelOrder();">取消订单</button>
   </div>
 </form>

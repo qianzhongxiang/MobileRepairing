@@ -57,7 +57,7 @@ export class OrderFormCheckComponent implements OnInit {
     this.PutOrder(this.Data);
   }
   public AcceptOrder() {
-    this.Data.orderState = OrderStates.Pending;
+    this.Data.orderState = OrderStates.Processing;
     this.PutOrder(this.Data);
   }
   public CancelOrderApply() {

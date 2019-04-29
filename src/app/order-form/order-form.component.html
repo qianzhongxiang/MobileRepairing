@@ -18,6 +18,10 @@
       [(ngModel)]="Data.detials.brokenPart"></textarea>
   </div>
   <div class="form-group">
+    <label for="procTime">到店时间</label>
+    <input name="procTime" class="form-control" type="datetime-local" id="procTime" [(ngModel)]="Data.procTime" />
+  </div>
+  <div class="form-group">
     <label for="phoneNumber">手机号</label>
     <input name="phoneNumber" type="number" class="form-control" id="phoneNumber" placeholder="手机号码"
       [(ngModel)]="Data.phoneNumber">

@@ -15,11 +15,13 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { OrderFormCheckComponent } from './order-form-check/order-form-check.component';
+import { OrderFormStoreComponent } from './order-form-store/order-form-store.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'orders', pathMatch: 'full' },
   { path: 'introducing', component: IntroducingComponent },
   { path: 'orders', component: OrderListComponent },
+  { path: 'orderInStore', component: OrderFormStoreComponent },
   // { path: 'book', component: BookRepairingComponent },
   { path: 'manageuser', component: ManageUserComponent },
   { path: 'setcareer', component: SetCareerComponent },

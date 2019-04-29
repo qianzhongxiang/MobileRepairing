@@ -1,5 +1,5 @@
 import { MatDialog } from '@angular/material/dialog';
-import { Order, Career, OrderStates } from './../entities';
+import { Order, Career, OrderStates, OrderType } from './../entities';
 import { OrderListService } from './../service/order-list.service';
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { OrderFormCheckComponent } from '../order-form-check/order-form-check.component';
@@ -14,7 +14,7 @@ import { tap } from 'rxjs/operators';
 export class OrderListComponent implements OnInit, AfterViewInit {
   public State = 0;
   displayedColumns: string[] = ['brand', 'model', 'brockPart', 'contact',
-    'remark', 'stat', 'updatedTime'];
+    'remark', 'stat', 'updatedTime', 'type'];
   dataSource: OrderDataSource;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   ngAfterViewInit(): void {
@@ -46,6 +46,16 @@ export class OrderListComponent implements OnInit, AfterViewInit {
         return '处理中';
       case OrderStates.Canceled:
         return '已取消';
+      default:
+        break;
+    }
+  }
+  public TypeTrans(type: OrderType) {
+    switch (type) {
+      case OrderType.Home:
+        return '上门';
+      case OrderType.OnStore:
+        return '到店';
       default:
         break;
     }

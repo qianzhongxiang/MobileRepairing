@@ -1,11 +1,11 @@
 {
     "Brands": [
         {
-            "name": "IPhone",
+            "name": "苹果",
             "value": "iphone"
         },
         {
-            "name": "XiaoMi",
+            "name": "小米",
             "value": "xiaomi"
         }
     ],
@@ -22,12 +22,80 @@
         ],
         "xiaomi": [
             {
-                "name": "4",
+                "name": "4/4c",
                 "value": "4"
+            },
+            {
+                "name": "5s",
+                "value": "5s"
+            },
+            {
+                "name": "5s Plus",
+                "value": "5sp"
             },
             {
                 "name": "5",
                 "value": "5"
+            },
+            {
+                "name": "4s",
+                "value": "4s"
+            },
+            {
+                "name": "3",
+                "value": "3"
+            },
+            {
+                "name": "2",
+                "value": "2"
+            },
+            {
+                "name": "NT标准",
+                "value": "ntStandard"
+            },
+            {
+                "name": "NT增强",
+                "value": "ntStrong"
+            },
+            {
+                "name": "NT4",
+                "value": "nt4"
+            },
+            {
+                "name": "NT3",
+                "value": "nt3"
+            },
+            {
+                "name": "NT2",
+                "value": "nt2"
+            },
+            {
+                "name": "NT",
+                "value": "nt"
+            },
+            {
+                "name": "红米4",
+                "value": "red4"
+            },
+            {
+                "name": "红米3",
+                "value": "red3"
+            },
+            {
+                "name": "红米2",
+                "value": "red2"
+            },
+            {
+                "name": "红米 pro",
+                "value": "redPro"
+            },
+            {
+                "name": "小米 Max",
+                "value": "max"
+            },
+            {
+                "name": "小米 5X",
+                "value": "5x"
             }
         ]
     }
