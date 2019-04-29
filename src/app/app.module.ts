@@ -19,6 +19,7 @@ import { InfoDialogComponent } from './info-dialog/info-dialog.component';
 import { BookRepairingComponent } from './book-repairing/book-repairing.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { OrderFormStoreComponent } from './order-form-store/order-form-store.component';
+import { BlankOrderSubmittedComponent } from './blank-order-submitted/blank-order-submitted.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import { OrderFormStoreComponent } from './order-form-store/order-form-store.com
     BookRepairingComponent,
     OrderDetailsComponent,
     OrderFormStoreComponent,
+    BlankOrderSubmittedComponent,
   ],
   imports: [
     BrowserModule,
