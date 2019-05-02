@@ -7,95 +7,835 @@
         {
             "name": "小米",
             "value": "xiaomi"
+        },
+        {
+            "name": "华为",
+            "value": "huawei"
+        },
+        {
+            "name": "vivo",
+            "value": "vivo"
+        },
+        {
+            "name": "OPPO",
+            "value": "oppo"
+        },
+        {
+            "name": "红米",
+            "value": "redMI"
         }
     ],
     "Models": {
         "iphone": [
             {
+                "name": "4",
+                "value": "iphone4"
+            },
+            {
+                "name": "4S",
+                "value": "iphone4s"
+            },
+            {
+                "name": "5",
+                "value": "iphone5"
+            },
+            {
+                "name": "5C",
+                "value": "iphone5c"
+            },
+            {
+                "name": "5S",
+                "value": "iphone5s"
+            },
+            {
+                "name": "5SE",
+                "value": "iphone5se"
+            },
+            {
                 "name": "6",
-                "value": "6"
+                "value": "iphone6"
+            },
+            {
+                "name": "6 PLUS",
+                "value": "iphone6p"
             },
             {
                 "name": "6s",
-                "value": "6s"
+                "value": "iphone6s"
+            },
+            {
+                "name": "6s PLUS",
+                "value": "iphone6sp"
+            },
+            {
+                "name": "7",
+                "value": "iphone7"
+            },
+            {
+                "name": "7 PLUS",
+                "value": "iphone7p"
+            },
+            {
+                "name": "8",
+                "value": "iphone8"
+            },
+            {
+                "name": "8 PLUS",
+                "value": "iphone8p"
+            },
+            {
+                "name": "X",
+                "value": "iphonex"
+            },
+            {
+                "name": "XR",
+                "value": "iphonexr"
+            },
+            {
+                "name": "XS",
+                "value": "iphonexs"
+            },
+            {
+                "name": "XS MAX",
+                "value": "iphonexsmax"
             }
         ],
         "xiaomi": [
             {
-                "name": "4/4c",
-                "value": "4"
-            },
-            {
-                "name": "5s",
-                "value": "5s"
-            },
-            {
-                "name": "5s Plus",
-                "value": "5sp"
-            },
-            {
-                "name": "5",
-                "value": "5"
-            },
-            {
-                "name": "4s",
-                "value": "4s"
+                "name": "2",
+                "value": "xiaomi2"
             },
             {
                 "name": "3",
-                "value": "3"
+                "value": "xiaomi3"
             },
             {
-                "name": "2",
-                "value": "2"
+                "name": "4/4c",
+                "value": "xiaomi4/4c"
+            },
+              {
+                "name": "4s",
+                "value": "xiaomi4s"
+            },
+            {
+                "name": "5s",
+                "value": "xiaomi5s"
+            },
+            {
+                "name": "5s Plus",
+                "value": "xiaomi5sp"
+            },
+            {
+                "name": "5/5c",
+                "value": "xiaomi5/5c"
+            },
+            {
+                "name": "小米 5X",
+                "value": "xiaomi5x"
             },
             {
                 "name": "NT标准",
-                "value": "ntStandard"
+                "value": "xiaomintStandard"
             },
             {
                 "name": "NT增强",
-                "value": "ntStrong"
+                "value": "xiaomintStrong"
             },
             {
                 "name": "NT4",
-                "value": "nt4"
+                "value": "xiaomint4"
             },
             {
                 "name": "NT3",
-                "value": "nt3"
+                "value": "xiaomint3"
             },
             {
                 "name": "NT2",
-                "value": "nt2"
+                "value": "xiaomint2"
             },
             {
                 "name": "NT",
-                "value": "nt"
+                "value": "xiaomint"
             },
             {
-                "name": "红米4",
-                "value": "red4"
+                "name": "小米 Max",
+                "value": "xiaomimax"
             },
             {
-                "name": "红米3",
-                "value": "red3"
+                "name": "小米 Max2",
+                "value": "xiaomimax2"
+            },
+            {
+                "name": "小米 Max3",
+                "value": "xiaomimax3"
+            },
+            {
+                "name": "小米 Mix",
+                "value": "xiaomimix"
+            },
+            {
+                "name": "小米 Mix2",
+                "value": "xiaomimix2"
+            },
+            {
+                "name": "小米 Mix2s",
+                "value": "xiaomimix2s"
+            },
+            {
+                "name": "小米 Mix3",
+                "value": "xiaomimix3"
+            },
+            {
+                "name": "小米 play",
+                "value": "xiaomiplay"
+            },
+            {
+                "name": "小米 note",
+                "value": "xiaominote"
+            },
+            {
+                "name": "小米 note3",
+                "value": "xiaominote3"
+            },
+            {
+                "name": "小米 6",
+                "value": "xiaomi6"
+            },
+            {
+                "name": "小米 6X",
+                "value": "xiaomi6x"
+            },
+            {
+                "name": "小米 8",
+                "value": "xiaomi8"
+            },
+            {
+                "name": "小米 8se",
+                "value": "xiaomi8se"
+            },
+            {
+                "name": "小米 8青春",
+                "value": "xiaomi8qingchun"
+            },
+            {
+                "name": "小米 9",
+                "value": "xiaomi9"
+            },
+            {
+                "name": "小米 9se",
+                "value": "xiaomi9se"
+            }
+        ],
+        "redMI": [
+            {
+                "name": "红米s2",
+                "value": "reds2"
             },
             {
                 "name": "红米2",
                 "value": "red2"
             },
             {
-                "name": "红米 pro",
-                "value": "redPro"
+                "name": "红米3",
+                "value": "red3"
             },
             {
-                "name": "小米 Max",
-                "value": "max"
+                "name": "红米3s",
+                "value": "red3s"
             },
             {
-                "name": "小米 5X",
-                "value": "5x"
+                "name": "红米4",
+                "value": "red4"
+            },
+            {
+                "name": "红米4x",
+                "value": "red4x"
+            },
+            {
+                "name": "红米5",
+                "value": "red5"
+            },
+            {
+                "name": "红米5plus",
+                "value": "red5p"
+            },
+            {
+                "name": "红米6/6A",
+                "value": "red6/6A"
+            },
+            {
+                "name": "红米6pro",
+                "value": "red6pro"
+            },
+            {
+                "name": "红米 7",
+                "value": "red7"
+            },
+            {
+                "name": "红米 note",
+                "value": "rednote"
+            },
+            {
+                "name": "红米 note2",
+                "value": "rednote2"
+            },
+            {
+                "name": "红米 note3",
+                "value": "rednote3"
+            },
+            {
+                "name": "红米 note4",
+                "value": "rednote4"
+            },
+            {
+                "name": "红米 note 4x",
+                "value": "rednote4x"
+            },
+            {
+                "name": "红米 note5",
+                "value": "rednote5"
+            },
+            {
+                "name": "红米 note7",
+                "value": "rednote7"
+            },
+            {
+                "name": "红米 note7pro",
+                "value": "rednote7pro"
+            }
+        ],
+        "oppo": [
+            {
+                "name": "oppo A3",
+                "value": "oppoA3"
+            },
+            {
+                "name": "oppo A5",
+                "value": "oppoA5"
+            },
+            {
+                "name": "oppo A7/7x",
+                "value": "oppoA7"
+            },
+            {
+                "name": "oppo A37",
+                "value": "oppoA37"
+            },
+            {
+                "name": "oppo A57",
+                "value": "oppoA57"
+            },
+            {
+                "name": "oppo A59",
+                "value": "oppoA59"
+            },
+            {
+                "name": "oppo A73",
+                "value": "oppoA73"
+            },
+            {
+                "name": "oppo A77",
+                "value": "oppoA77"
+            },
+            {
+                "name": "oppo A83",
+                "value": "oppoA83"
+            },
+            {
+                "name": "oppo R7",
+                "value": "oppoR7"
+            },
+            {
+                "name": "oppo R7s",
+                "value": "oppoR7s"
+            },
+            {
+                "name": "oppo R7s/plus",
+                "value": "oppoR7sp"
+            },
+            {
+                "name": "oppo R9",
+                "value": "oppoR9"
+            },
+            {
+                "name": "oppo R9km",
+                "value": "oppoR9km"
+            },
+            {
+                "name": "oppo R9plus",
+                "value": "oppoR9p"
+            },
+            {
+                "name": "oppo R9s",
+                "value": "oppoR9s"
+            },
+            {
+                "name": "oppo R9sk",
+                "value": "oppoR9sk"
+            },
+            {
+                "name": "oppo R9splus",
+                "value": "oppoR9sp"
+            },
+            {
+                "name": "oppo R11",
+                "value": "oppoR11"
+            },
+            {
+                "name": "oppo R11plus",
+                "value": "oppoR11p"
+            },
+            {
+                "name": "oppo R11s",
+                "value": "oppoR11s"
+            },
+            {
+                "name": "oppo R11splus",
+                "value": "oppoR11sp"
+            },
+            {
+                "name": "oppo R15标准版",
+                "value": "oppoR15biaozhunban"
+            },
+            {
+                "name": "oppo R15梦镜版",
+                "value": "oppoR15mengjingban"
+            },
+            {
+                "name": "oppo R15x",
+                "value": "oppoR15x"
+            },
+            {
+                "name": "oppo R17",
+                "value": "oppoR17"
+            },
+            {
+                "name": "oppo R17pro",
+                "value": "oppoR17pro"
+            },
+            {
+                "name": "oppo RENO",
+                "value": "opporeno"
+            }
+        ],
+        "vivo": [
+            {
+                "name": "vivo V3",
+                "value": "vivov3"
+            },
+            {
+                "name": "vivo Y37",
+                "value": "vivoy37"
+            },
+            {
+                "name": "vivo Y51",
+                "value": "vivoy51"
+            },
+            {
+                "name": "vivo Y55",
+                "value": "vivoy55"
+            },
+            {
+                "name": "vivo Y66",
+                "value": "vivoy66"
+            },
+            {
+                "name": "vivo Y67",
+                "value": "vivoy67"
+            },
+            {
+                "name": "vivo Y71",
+                "value": "vivoy71"
+            },
+            {
+                "name": "vivo Y77",
+                "value": "vivoy77"
+            },
+            {
+                "name": "vivo Y79",
+                "value": "vivoy79"
+            },
+            {
+                "name": "vivo Y81",
+                "value": "vivoy81"
+            },
+            {
+                "name": "vivo Y83",
+                "value": "vivoy83"
+            },
+            {
+                "name": "vivo Y85",
+                "value": "vivoy85"
+            },
+            {
+                "name": "vivo Y91",
+                "value": "vivoy691"
+            },
+            {
+                "name": "vivo Y93",
+                "value": "vivoy93"
+            },
+            {
+                "name": "vivo Y97",
+                "value": "vivoy97"
+            },
+            {
+                "name": "vivo NEX",
+                "value": "vivoynex"
+            },
+            {
+                "name": "vivo iQ00",
+                "value": "vivoiq00"
+            },
+            {
+                "name": "vivo S1",
+                "value": "vivos1"
+            },
+            {
+                "name": "vivo Z3i",
+                "value": "vivoz3i"
+            },
+            {
+                "name": "vivo X5pro",
+                "value": "vivox5pro"
+            },
+            {
+                "name": "vivo X5MAX",
+                "value": "vivox5max"
+            },
+            {
+                "name": "vivo X6",
+                "value": "vivox6"
+            },
+            {
+                "name": "vivo X6plus",
+                "value": "vivox6p"
+            },
+            {
+                "name": "vivo X7",
+                "value": "vivox7"
+            },
+            {
+                "name": "vivo X7plus",
+                "value": "vivox7p"
+            },
+            {
+                "name": "vivo X9",
+                "value": "vivox9"
+            },
+            {
+                "name": "vivo X9plus",
+                "value": "vivox9p"
+            },
+            {
+                "name": "vivo X9splus",
+                "value": "vivox9sp"
+            },
+            {
+                "name": "vivo X20",
+                "value": "vivox20"
+            },
+            {
+                "name": "vivo X20plus",
+                "value": "vivox20p"
+            },
+            {
+                "name": "vivo X21",
+                "value": "vivox21"
+            },
+            {
+                "name": "vivo X23",
+                "value": "vivox23"
+            },
+            {
+                "name": "vivo X27",
+                "value": "vivox27"
+            },
+            {
+                "name": "vivo X27pro",
+                "value": "vivox27pro"
+            }
+        ],
+        "huawei": [
+            {
+                "name": "畅享5",
+                "value": "changxiang5"
+            },
+            {
+                "name": "畅享5s",
+                "value": "changxiang5s"
+            },
+            {
+                "name": "畅享6",
+                "value": "changxiang6"
+            },
+            {
+                "name": "畅享6S",
+                "value": "changxiang6s"
+            },
+            {
+                "name": "畅享6X",
+                "value": "changxiang6x"
+            },
+            {
+                "name": "畅享7",
+                "value": "changxiang7"
+            },
+            {
+                "name": "畅享7 PLUS",
+                "value": "changxiang7p"
+            },
+            {
+                "name": "畅享7A",
+                "value": "changxiang7a"
+            },
+            {
+                "name": "畅享7x",
+                "value": "changxiang7x"
+            },
+            {
+                "name": "畅享7s",
+                "value": "changxiang7s"
+            },
+            {
+                "name": "畅享7C",
+                "value": "changxiang7c"
+            },
+            {
+                "name": "畅享8",
+                "value": "changxiang8"
+            },
+            {
+                "name": "畅享8lpus",
+                "value": "changxiang8p"
+            },
+            {
+                "name": "畅享8x",
+                "value": "changxiang8x"
+            },
+            {
+                "name": "畅享8E青春",
+                "value": "changxiang8eqingchun"
+            },
+            {
+                "name": "畅享9",
+                "value": "changxiang9"
+            },
+            {
+                "name": "畅享9E",
+                "value": "changxiang9e"
+            },
+            {
+                "name": "畅享9s",
+                "value": "changxiang9s"
+            },
+            {
+                "name": "畅享9lpus",
+                "value": "changxiang9p"
+            },
+            {
+                "name": "畅享MAX",
+                "value": "changxiangmax"
+            },
+            {
+                "name": "麦芒4",
+                "value": "maimang4"
+            },
+            {
+                "name": "麦芒5",
+                "value": "maimang5"
+            },
+            {
+                "name": "麦芒6",
+                "value": "maimang6"
+            },
+            {
+                "name": "麦芒7",
+                "value": "maimang7"
+            },
+            {
+                "name": "huawei V8",
+                "value": "huaweiv8"
+            },
+            {
+                "name": "huawei V9",
+                "value": "huaweiv9"
+            },
+            {
+                "name": "huawei V9play",
+                "value": "huaweiv9play"
+            },
+            {
+                "name": "huawei V10",
+                "value": "huaweiv10"
+            },
+            {
+                "name": "huawei P7",
+                "value": "huaweip7"
+            },
+            {
+                "name": "huawei P8",
+                "value": "huaweip8"
+            },
+            {
+                "name": "huawei P8青春",
+                "value": "huaweip8qingchun"
+            },
+            {
+                "name": "huawei P8MAX",
+                "value": "huaweip8max"
+            },
+            {
+                "name": "huawei P9",
+                "value": "huaweip9"
+            },
+            {
+                "name": "huawei P9plus",
+                "value": "huaweip9p"
+            },
+            {
+                "name": "huawei P10",
+                "value": "huaweip10"
+            },
+            {
+                "name": "huawei P10plus",
+                "value": "huaweip10p"
+            },
+            {
+                "name": "huawei P20",
+                "value": "huaweip20"
+            },
+            {
+                "name": "huawei P20plus",
+                "value": "huaweip20p"
+            },
+            {
+                "name": "huawei P20PRO",
+                "value": "huaweip20pro"
+            },
+            {
+                "name": "huawei P30",
+                "value": "huaweip30"
+            },
+            {
+                "name": "huawei P30PRO",
+                "value": "huaweip30pro"
+            },
+            {
+                "name": "荣耀 6plus",
+                "value": "rongyao6p"
+            },
+            {
+                "name": "荣耀 7",
+                "value": "rongyao7"
+            },
+            {
+                "name": "荣耀 7A",
+                "value": "rongyao7a"
+            },
+            {
+                "name": "荣耀 7I",
+                "value": "rongyao7i"
+            },
+            {
+                "name": "荣耀 7C",
+                "value": "rongyao7c"
+            },
+            {
+                "name": "荣耀 8",
+                "value": "rongyao8"
+            },
+            {
+                "name": "荣耀 8青春",
+                "value": "rongyao8青春"
+            },
+            {
+                "name": "荣耀 8A",
+                "value": "rongyao8a"
+            },
+            {
+                "name": "荣耀 8C",
+                "value": "rongyao8c"
+            },
+            {
+                "name": "荣耀 8X",
+                "value": "rongyao8x"
+            },
+            {
+                "name": "荣耀 8XMAX",
+                "value": "rongyao8xmax"
+            },
+            {
+                "name": "荣耀 9",
+                "value": "rongyao9"
+            },
+            {
+                "name": "荣耀 9I",
+                "value": "rongyao9i"
+            },
+            {
+                "name": "荣耀 9青春",
+                "value": "rongyao9qingchun"
+            },
+            {
+                "name": "荣耀 10",
+                "value": "rongyao10"
+            },
+            {
+                "name": "荣耀 10青春",
+                "value": "rongyao10qingchun"
+            },
+            {
+                "name": "荣耀 plat",
+                "value": "rongyaoplay"
+            },
+            {
+                "name": "荣耀 V20",
+                "value": "rongyaov20"
+            },
+            {
+                "name": "荣耀 20I",
+                "value": "rongyao20i"
+            },
+            {
+                "name": "荣耀 NOVA",
+                "value": "nova"
+            },
+            {
+                "name": "荣耀 NOVA青春",
+                "value": "novaqingchun"
+            },
+            {
+                "name": "荣耀 NOVA2",
+                "value": "nova2"
+            },
+            {
+                "name": "荣耀 NOVA2plus",
+                "value": "nova2p"
+            },
+            {
+                "name": "荣耀 NOVA2s",
+                "value": "nova2s"
+            },
+            {
+                "name": "荣耀 NOVA3",
+                "value": "nova3"
+            },
+            {
+                "name": "荣耀 NOVA3I",
+                "value": "nova3i"
+            },
+            {
+                "name": "荣耀 NOVA3E",
+                "value": "nova3e"
+            },
+            {
+                "name": "荣耀 NOVA4",
+                "value": "nova4"
+            },
+            {
+                "name": "荣耀 NOVA4E",
+                "value": "nova4e"
             }
         ]
     }
