@@ -25,7 +25,7 @@ export class OrderFormStoreComponent implements OnInit {
     this.netService.PostAsync(this.configService.Data.Urls.OrderPost, this.Data).subscribe(this.SubmitSuccessful.bind(this));
   }
   public SubmitSuccessful() {
-    this.router.navigateByUrl('orderSubmitted');
+    this.router.navigateByUrl('introducing');
   }
 
 }

@@ -14,6 +14,7 @@ export class OrderFormComponent implements OnInit {
   public Data: Order = { detials: {} };
   constructor(private netService: NetService, private configService: ConfigService
     , public orderListService: OrderListService, private router: Router) {
+    // this.Data.detials.brand
   }
 
   ngOnInit() {
@@ -24,6 +25,6 @@ export class OrderFormComponent implements OnInit {
     this.netService.PostAsync(this.configService.Data.Urls.OrderPost, this.Data).subscribe(this.SubmitSuccessful.bind(this));
   }
   public SubmitSuccessful() {
-    this.router.navigateByUrl('orderSubmitted');
+    this.router.navigateByUrl('introducing');
   }
 }

@@ -20,6 +20,7 @@ import { BookRepairingComponent } from './book-repairing/book-repairing.componen
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { OrderFormStoreComponent } from './order-form-store/order-form-store.component';
 import { BlankOrderSubmittedComponent } from './blank-order-submitted/blank-order-submitted.component';
+import { InterfaceOfQuickClickComponent } from './interface-of-quick-click/interface-of-quick-click.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { BlankOrderSubmittedComponent } from './blank-order-submitted/blank-orde
     OrderDetailsComponent,
     OrderFormStoreComponent,
     BlankOrderSubmittedComponent,
+    InterfaceOfQuickClickComponent,
   ],
   imports: [
     BrowserModule,

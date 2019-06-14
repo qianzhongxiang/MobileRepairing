@@ -1,0 +1,129 @@
+
+/*body样式*/
+:host {
+    box-sizing: border-box;
+    font-family: 宋体;
+    margin: 0;
+}
+
+/* 标题 */
+p.header {
+    font-family: '楷体';
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.header2 {
+    border-radius: 5px;
+    padding: 2px 8px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: -18px;
+    width: 160px;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(196, 196, 196)
+}
+
+/*.img{
+position:relative;
+top: 20px;
+left: 20px;
+right:20px
+} */
+
+
+/*.img2{
+position: absolute;
+top: 0px;
+right: 200px;
+}*/
+
+
+.header3 {
+    font: 700 17px "楷体";
+    border-radius: 5px;
+    padding: 3px 8px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: -16px;
+    width: 180px;
+    text-align: center;
+    background: white
+}
+
+
+
+
+
+.line {
+    margin: 0px 16%;
+    border: solid 1px;
+}
+
+.nav {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+.nav a:hover {
+
+    color: rgb(255, 142, 142);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    float: left;
+    padding-right: 40px;
+}
+
+ul {
+    color: red;
+    width: 100%;
+    padding: 0;
+}
+
+div.img {
+    border: none;
+    width: 50%;
+}
+
+/* div.img:hover {
+    border: 1px solid rgb(141, 112, 112);
+    background-color: coral;
+} */
+
+/*div.img img {
+width: 100%;
+height: auto;
+}*/
+.brand {
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 12px;
+    min-height: 23vw;
+}
+
+.img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+app-image-carousel{
+    margin-bottom: 2rem;
+}

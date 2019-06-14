@@ -1,0 +1,9 @@
+<form class="container">
+  <div class="form-group">
+    <label for="repairMethod">维修方式</label>
+    <select #selectedbrand name="repairMethod" class="form-control" id="repairMethod" [(ngModel)]="value">
+      <option value="orderInStore">到 店</option>
+      <option value="order">上 门</option>
+    </select>
+  </div>
+</form>
