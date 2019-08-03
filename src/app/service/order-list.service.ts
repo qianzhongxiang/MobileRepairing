@@ -3,7 +3,7 @@ import { Order } from './../entities';
 import { ConfigService } from './config.service';
 import { NetService } from './net.service';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subscribable } from 'rxjs';
 export interface Brand {
   name: string;
   value: string;
@@ -25,7 +25,7 @@ export class OrderListService {
     this.LoadBrands();
   }
 
-  public Refresh(data: any = {}) {
+  public Refresh(data: any = {}): Subscribable<{ count: number, data: Order[] }> {
     return this.netService.PostAsync(this.configService.Data.Urls.OrderList, data);
   }
   public LoadBrands() {

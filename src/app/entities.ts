@@ -39,3 +39,14 @@ export interface Order {
     type?: OrderType;
     procTime?: string;
 }
+
+export interface Brands {
+    id?: string;
+    name?: string;
+}
+
+export interface Models {
+    id?: string;
+    brandsId?: string;
+    name?: string;
+}

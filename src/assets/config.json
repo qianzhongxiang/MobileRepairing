@@ -7,6 +7,9 @@
         "Order": "http://localhost:24186/api/order",
         "OrderPost": "http://localhost:24186/api/order/save",
         "OrderUpdate": "http://localhost:24186/api/order/update",
-        "Brands": "assets/brands.json"
+        "Brands": "http://localhost:24186/api/order/brands",
+        "ALLBrands": "http://localhost:24186/api/order/allBrands",
+        "Models": "http://localhost:24186/api/order/models",
+        "ModelsByBrand": "http://localhost:24186/api/order/allmodelsByBrand"
     }
 }

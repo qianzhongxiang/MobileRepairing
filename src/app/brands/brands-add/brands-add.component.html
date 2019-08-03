@@ -1,0 +1,16 @@
+<form>
+  <div class="form-group">
+    <label for="msg"></label>
+    <p class="err">{{Msg}}</p>
+  </div>
+  <div class="form-group">
+    <label for="brand">品牌</label>
+    <input name="brand" class="form-control" id="phoneNumber" placeholder="品牌" [(ngModel)]="Name">
+  </div>
+  <div class="form-group">
+    <!-- <button type="button" class="btn btn-secondry" (click)="CancelOrder();">撤销订单</button> -->
+    <button type="button" class="btn btn-primary" (click)="Save();">保 存</button>
+    <!-- 目前可多人受理 -->
+    <button type="button" class="btn" (click)="Cancel();">取 消</button>
+  </div>
+</form>

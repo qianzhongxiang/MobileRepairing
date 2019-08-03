@@ -7,6 +7,9 @@
         "Order": "http://bookingSvc.xy-tech.top/api/order/",
         "OrderPost": "http://bookingSvc.xy-tech.top/api/order/save",
         "OrderUpdate": "http://bookingSvc.xy-tech.top/api/order/update",
-        "Brands": "assets/brands.json"
+        "Brands": "http://bookingSvc.xy-tech.top/api/order/brands",
+        "ALLBrands": "http://bookingSvc.xy-tech.top/api/order/allBrands",
+        "Models": "http://bookingSvc.xy-tech.top/api/order/models",
+        "ModelsByBrand": "http://bookingSvc.xy-tech.top/api/order/allmodelsByBrand"
     }
 }

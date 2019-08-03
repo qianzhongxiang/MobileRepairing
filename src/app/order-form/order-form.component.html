@@ -1,14 +1,18 @@
+<app-global-header></app-global-header>
+
 <form class="container">
   <div class="form-group">
     <label for="brand">品牌</label>
-    <select #selectedbrand name="brand" class="form-control" id="brand" [(ngModel)]="Data.detials.brand">
-      <option *ngFor="let brand of orderListService.Brands" value="{{brand.value}}">{{brand.name}}</option>
+    <select name="brand" class="form-control" id="brand" (change)="BrandsChange()" required
+      [(ngModel)]="Data.detials.brand">
+      <option value=""></option>
+      <option *ngFor="let brand of Brands,let i=index" value="{{brand.name}}">{{brand.name}}</option>
     </select>
   </div>
   <div class="form-group">
     <label for="model">型号</label>
-    <select name="model" class="form-control" id="model" [(ngModel)]="Data.detials.model">
-      <option *ngFor="let model of orderListService.Models[Data.detials.brand]" value="{{model.value}}">{{model.name}}
+    <select name="model" class="form-control" id="model" required [(ngModel)]="Data.detials.model">
+      <option *ngFor="let model of Models" value="{{model.name}}">{{model.name}}
       </option>
     </select>
   </div>
@@ -18,17 +22,25 @@
       [(ngModel)]="Data.detials.brokenPart"></textarea>
   </div>
   <div class="form-group">
-    <label for="procTime">上门时间</label>
+    <label for="method">服务方式</label>
+    <select name="method" class="form-control" id="method" [(ngModel)]="Data.type">
+      <option value="1">到店维修</option>
+      <option value="2">上门维修</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label *ngIf="Data.type==2" for="procTime">上门时间</label>
+    <label *ngIf="Data.type==1" for="procTime">到店时间</label>
     <input name="procTime" class="form-control" type="datetime-local" id="procTime" [(ngModel)]="Data.procTime" />
+  </div>
+  <div *ngIf="Data.type==2" class="form-group">
+    <label for="address">地址</label>
+    <textarea name="address" class="form-control" placeholder="家庭住址" id="address" [(ngModel)]="Data.address"></textarea>
   </div>
   <div class="form-group">
     <label for="phoneNumber">手机号</label>
-    <input name="phoneNumber" type="number" class="form-control" id="phoneNumber" placeholder="手机号码"
+    <input name="phoneNumber" type="number" required class="form-control" id="phoneNumber" placeholder="手机号码"
       [(ngModel)]="Data.phoneNumber">
-  </div>
-  <div class="form-group">
-    <label for="address">地址</label>
-    <textarea name="address" class="form-control" placeholder="家庭住址" id="address" [(ngModel)]="Data.address"></textarea>
   </div>
   <div class="form-group">
     <button type="button" class="btn btn-block btn-large btn-primary" (click)="Submit();">提 交</button>

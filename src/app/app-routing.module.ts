@@ -15,19 +15,25 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { OrderFormCheckComponent } from './order-form-check/order-form-check.component';
-import { OrderFormStoreComponent } from './order-form-store/order-form-store.component';
 import { BlankOrderSubmittedComponent } from './blank-order-submitted/blank-order-submitted.component';
-
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { BrandsComponent } from './brands/brands.component';
+import { ModelsComponent } from './models/models.component';
+import { ModelsAddComponent } from './models/models-add/models-add.component';
+import { BrandsAddComponent } from './brands/brands-add/brands-add.component';
+import { DelConfirmComponent } from './del-confirm/del-confirm.component';
+import { GlobalHeaderComponent } from './global-header/global-header.component';
 const routes: Routes = [
   { path: '', redirectTo: 'orders', pathMatch: 'full' },
   { path: 'introducing', component: IntroducingComponent },
   { path: 'orderSubmitted', component: BlankOrderSubmittedComponent },
   { path: 'orders', component: OrderListComponent },
-  { path: 'orderInStore', component: OrderFormStoreComponent },
   // { path: 'book', component: BookRepairingComponent },
   { path: 'manageuser', component: ManageUserComponent },
   { path: 'setcareer', component: SetCareerComponent },
-  { path: 'order', component: OrderFormComponent }
+  { path: 'order', component: OrderFormComponent },
+  { path: 'models', component: ModelsComponent },
+  { path: 'brands', component: BrandsComponent }
 ];
 
 @NgModule({
@@ -40,7 +46,8 @@ const routes: Routes = [
     FormsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatCheckboxModule
   ],
   exports: [
     RouterModule
@@ -49,9 +56,13 @@ const routes: Routes = [
     OrderListComponent,
     OrderItemComponent,
     OrderFormComponent,
-    ImageCarouselComponent
+    BrandsComponent,
+    ModelsComponent,
+    GlobalHeaderComponent,
+    ImageCarouselComponent,
+    ModelsAddComponent
   ],
   providers: [NgbCarouselConfig],
-  entryComponents: [OrderFormCheckComponent]
+  entryComponents: [OrderFormCheckComponent, BrandsAddComponent, ModelsAddComponent, DelConfirmComponent]
 })
 export class AppRoutingModule { }

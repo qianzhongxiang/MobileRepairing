@@ -18,9 +18,11 @@ import { SetCareerComponent } from './set-career/set-career.component';
 import { InfoDialogComponent } from './info-dialog/info-dialog.component';
 import { BookRepairingComponent } from './book-repairing/book-repairing.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
-import { OrderFormStoreComponent } from './order-form-store/order-form-store.component';
 import { BlankOrderSubmittedComponent } from './blank-order-submitted/blank-order-submitted.component';
 import { InterfaceOfQuickClickComponent } from './interface-of-quick-click/interface-of-quick-click.component';
+import { GlobalHeaderComponent } from './global-header/global-header.component';
+import { BrandsAddComponent } from './brands/brands-add/brands-add.component';
+import { DelConfirmComponent } from './del-confirm/del-confirm.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,9 +37,10 @@ import { InterfaceOfQuickClickComponent } from './interface-of-quick-click/inter
     InfoDialogComponent,
     BookRepairingComponent,
     OrderDetailsComponent,
-    OrderFormStoreComponent,
     BlankOrderSubmittedComponent,
     InterfaceOfQuickClickComponent,
+    BrandsAddComponent,
+    DelConfirmComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,7 @@ import { InterfaceOfQuickClickComponent } from './interface-of-quick-click/inter
     HttpClientModule,
     AppRoutingModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [ConfigService,
     {

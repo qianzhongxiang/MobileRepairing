@@ -7,6 +7,9 @@ export interface UrlsConfig {
     OrderUpdate: string;
     OrderPost: string;
     Brands: string;
+    ALLBrands: string;
+    Models: string;
+    ModelsByBrand: string;
 }
 export interface AppConfig {
     Urls: UrlsConfig;

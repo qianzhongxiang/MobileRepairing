@@ -6,6 +6,7 @@ import { Cookie } from 'vincijs';
 import { User, Order } from '../entities';
 import { InfoDialogComponent } from '../info-dialog/info-dialog.component';
 import { Observable } from 'rxjs';
+import { URLSearchParams } from 'url';
 @Injectable({
   providedIn: 'root'
 })
@@ -27,7 +28,13 @@ export class NetService {
   public ShowInfo(msg: string) {
     this.matDialog.open(InfoDialogComponent, { data: msg });
   }
-  public PostAsync(url: string, body: any): Observable<Order[]> {
+  public GetAsync(url: string, paramters: { [key: string]: string }) {
+    return this.httpClient.get(url, { params: paramters });
+  }
+  public DelAsync(url: string, paramters: { [key: string]: string | string[] }) {
+    return this.httpClient.delete(url, { params: paramters });
+  }
+  public PostAsync(url: string, body: any): Observable<any> {
     // if (!Cookie.Get('user')) {
     //   const ref = this.userService.Login();
     //   ref.afterClosed().subscribe(a => {

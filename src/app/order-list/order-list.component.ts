@@ -18,13 +18,13 @@ export class OrderListComponent implements OnInit, AfterViewInit {
   dataSource: OrderDataSource;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   ngAfterViewInit(): void {
-    this.paginator.page.pipe(tap(this.Search.bind(this)
-    ));
+    this.dataSource = new OrderDataSource(this.orderListService, this.paginator);
+    this.paginator.page.subscribe(this.Search.bind(this)
+    );
     this.Search();
   }
 
   constructor(public orderListService: OrderListService, public matDialog: MatDialog) {
-    this.dataSource = new OrderDataSource(orderListService);
   }
 
   ngOnInit() {

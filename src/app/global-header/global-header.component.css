@@ -1,0 +1,28 @@
+:host{
+    display: block;
+    height: 2.5rem;
+}
+svg{
+height: 2rem;
+}
+.s-container{
+    height: 100%;
+}
+.logo{
+    float: left;
+}
+.phoneNo{
+    
+    float: right;
+}
+.fa-phone{
+    color: rgb(230, 148, 71);
+    padding: 4px;
+    font-size: 1.3rem;
+}
+span{
+    margin-right: 8px;
+    font-family: 宋体;
+    font-size: .8rem;
+    color: #616161;
+}
