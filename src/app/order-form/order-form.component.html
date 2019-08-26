@@ -3,7 +3,11 @@
 <form class="container">
   <div class="form-group">
     <label for="brand">品牌</label>
-    <select name="brand" class="form-control" id="brand" (change)="BrandsChange()" required
+    <button *ngIf="bload" class="btn btn-primary form-control" type="button" disabled>
+      <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+      Loading...
+    </button>
+    <select *ngIf="!bload" name="brand" class="form-control" id="brand" (change)="BrandsChange()" required
       [(ngModel)]="Data.detials.brand">
       <option value=""></option>
       <option *ngFor="let brand of Brands,let i=index" value="{{brand.name}}">{{brand.name}}</option>
@@ -11,7 +15,11 @@
   </div>
   <div class="form-group">
     <label for="model">型号</label>
-    <select name="model" class="form-control" id="model" required [(ngModel)]="Data.detials.model">
+    <button *ngIf="mload" class="btn btn-primary form-control" type="button" disabled>
+      <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+      Loading...
+    </button>
+    <select *ngIf="!mload" name="model" class="form-control" id="model" required [(ngModel)]="Data.detials.model">
       <option *ngFor="let model of Models" value="{{model.name}}">{{model.name}}
       </option>
     </select>

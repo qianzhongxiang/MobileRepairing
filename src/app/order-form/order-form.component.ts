@@ -18,6 +18,8 @@ export class OrderFormComponent implements OnInit {
   public Data: Order = { detials: {} };
   public Brands: Brands[] = [];
   public Models: Models[] = [];
+  public bload = true;
+  public mload = false;
   constructor(private netService: NetService, private configService: ConfigService
     , public orderListService: OrderListService, private router: Router, public brandsS: BrandsService,
     public modelsS: ModelsService) {
@@ -27,8 +29,10 @@ export class OrderFormComponent implements OnInit {
     if (!this.Data.type) {
       this.Data.type = OrderType.OnStore;
     }
+
     brandsS.All().subscribe(ls => {
       this.Brands = ls;
+      this.bload = false;
       this.BrandsChange();
     });
   }
@@ -38,7 +42,8 @@ export class OrderFormComponent implements OnInit {
   public BrandsChange() {
     const v = this.Brands.find(b => b.name === this.Data.detials.brand);
     if (v && v.id) {
-      this.modelsS.GetAllByBrandId(v.id).subscribe(m => this.Models = m);
+      this.mload = true;
+      this.modelsS.GetAllByBrandId(v.id).subscribe(m => { this.Models = m; this.mload = false; });
     }
   }
   public Submit() {
